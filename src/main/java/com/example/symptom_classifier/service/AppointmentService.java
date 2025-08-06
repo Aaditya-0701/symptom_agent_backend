@@ -55,7 +55,7 @@ public class AppointmentService {
 
                 Dear %s,
 
-                Your appointment has been confirmed with the following details:
+                Your appointment has been confirmed with following details:
                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                 📅 Appointment ID: %s
                 👩‍⚕️ Doctor: %s
