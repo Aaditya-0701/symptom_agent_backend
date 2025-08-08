@@ -12,6 +12,7 @@ public class ApiKeyFilter implements Filter {
     @Value("${api.key}")
     private String apiKey;
 
+
     @Override
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
             throws IOException, ServletException {
@@ -22,6 +23,7 @@ public class ApiKeyFilter implements Filter {
             ((HttpServletResponse) res).sendError(HttpServletResponse.SC_UNAUTHORIZED);
             return;
         }
+        System.out.println(apiKey);
         chain.doFilter(req, res);
     }
 }
